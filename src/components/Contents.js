@@ -89,16 +89,16 @@ const Contents = () => {
         <div className='contents'>
             <div>
                 <Bar data = {confirmedData} options={
-                    {title: { display: true, text: '누적확진자 추이', fontSize:16}},
-                    {legend: {display: true, position: 'bottom'}}
+                    {title: { display: true, text: '누적확진자 추이', fontSize:16},
+                    legend: {display: true, position: 'bottom'}}
                 } />
                 <Line data = {quarantinedData} options={
-                    {title: { display: true, text: ' 월별 격리자 추이', fontSize:16}},
-                    {legend: {display: true, position: 'bottom'}}
+                    {title: { display: true, text: ' 월별 격리자 추이', fontSize:16},
+                    legend: {display: true, position: 'bottom'}}
                 } />      
                 <Doughnut data = {comparedData} options={
-                    {title: { display: true, text: ' 누적, 확진, 해제, 사망 (${new Date().getMonth()+1}월)', fontSize:16}},
-                    {legend: {display: true, position: 'bottom'}}
+                    {title: { display: true, text: ` 누적, 확진, 해제, 사망 (${new Date().getMonth()+1}월) `, fontSize:16},
+                    legend: {display: true, position: 'bottom'}}
                 } />             
             </div>
         </div>
